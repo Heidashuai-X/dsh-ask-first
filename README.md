@@ -1,5 +1,8 @@
 # dsh-ask-first
 
+[![CI](https://github.com/Heidashuai-X/dsh-ask-first/actions/workflows/ci.yml/badge.svg)](https://github.com/Heidashuai-X/dsh-ask-first/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 > 正式回答之前，先向你提问——每次只问一个问题，追问到有足够把握理解你的真实需求与最终目标，再给出完整方案。
 
 一个 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（DSH）插件。
