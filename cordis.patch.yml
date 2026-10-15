@@ -1,0 +1,12 @@
+# Bundle patch for dsh-ask-first.
+#
+# Install into a profile:
+#     dsh plugin --profile desktop add dsh-ask-first
+#     dsh plugin --profile desktop add link:/path/to/dsh-ask-first
+#
+# This file is the only thing DSH reads to load the package; the whole plugin
+# lives in lib/index.js, which registers one system-prompt section.
+
+- insert:
+  - id: dsh-ask-first
+    name: dsh-ask-first

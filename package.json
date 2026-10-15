@@ -1,0 +1,64 @@
+{
+	"name": "dsh-ask-first",
+	"version": "0.1.0",
+	"description": "DSH 插件：正式回答之前先向你提问，每次只问一个问题，追问到有足够把握理解你的真实需求与最终目标后，再给出完整方案。",
+	"license": "MIT",
+	"author": "Heidashuai-X",
+	"keywords": [
+		"dsh",
+		"dsh-plugin",
+		"cordis",
+		"deepseek-harness",
+		"prompt",
+		"system-prompt",
+		"clarify",
+		"ask-first",
+		"socratic"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Heidashuai-X/dsh-ask-first.git"
+	},
+	"homepage": "https://github.com/Heidashuai-X/dsh-ask-first#readme",
+	"bugs": {
+		"url": "https://github.com/Heidashuai-X/dsh-ask-first/issues"
+	},
+	"type": "module",
+	"main": "lib/index.js",
+	"scripts": {
+		"test": "node tools/tests/host-smoke.mjs"
+	},
+	"exports": {
+		".": {
+			"default": "./lib/index.js"
+		},
+		"./cordis.patch.yml": "./cordis.patch.yml",
+		"./package.json": "./package.json"
+	},
+	"files": [
+		"lib",
+		"prompts",
+		"tools",
+		"cordis.patch.yml",
+		"README.md",
+		"CHANGELOG.md",
+		"LICENSE"
+	],
+	"dsh": {
+		"bundle": {
+			"patch": "./cordis.patch.yml"
+		}
+	},
+	"engines": {
+		"node": ">=18",
+		"dsh": ">=0.1.5-rc.1"
+	},
+	"peerDependencies": {
+		"@deepseek-ai/cordis": "^4.0.1"
+	},
+	"peerDependenciesMeta": {
+		"@deepseek-ai/cordis": {
+			"optional": true
+		}
+	}
+}

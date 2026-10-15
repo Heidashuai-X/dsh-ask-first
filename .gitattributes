@@ -1,0 +1,6 @@
+# Normalize line endings in the repository, whatever the local platform does.
+* text=auto eol=lf
+
+# Windows launchers, in case anyone adds one.
+*.cmd text eol=crlf
+*.bat text eol=crlf
